@@ -8,7 +8,7 @@ exports.createPages = async ({ actions }) => {
     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
     host: 'cdn.contentful.com',
   });
-  
+  console.log("Test SPACE ID", process.env.CONTENTFUL_ACCESS_TOKEN)
   const res = await client.getEntries({
     content_type: 'page',
     include: 10,
